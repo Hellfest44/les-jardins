@@ -1,0 +1,265 @@
+html, body {
+
+    width:auto;
+     
+    margin: 0;
+    padding: 10;
+  }
+
+  #container {
+
+    display: grid;
+    grid-template-columns: 140px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 100px 300px 200px;
+    grid-gap: 10px;
+    grid-area: 
+        "header"
+        "content"
+        "footer";
+  }
+
+
+#header {
+
+    
+        grid-area: header;
+        grid-column-start: 2;
+        grid-column-end: 29;
+        grid-row-start: 1;
+       
+        
+        background-color: red;
+        
+     
+}
+
+#button {
+
+    grid-area: button;
+
+}
+
+#content {
+    grid-area: content;
+    grid-column-start: 4;
+    grid-column-end: 27;
+    grid-row-start: 2;
+    background-color: rgb(238, 220, 243);
+   
+    
+}
+
+#footer{
+    grid-area: footer;
+    grid-column-start: 2;
+    grid-column-end: 29;
+    grid-row-start: 3;
+    background-color: lightgreen;
+}
+.titre {
+
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: forestgreen;
+    font-size: 3.5em;  
+    margin-top: 0em;
+
+}
+
+.item{
+    min-height: 100px;
+    background-color:lightcyan;
+    grid-column-start: 5;
+    width:1200px;
+    gap: 10px;
+    margin: 10px;
+}
+
+.item3 {
+
+    background-color:lightskyblue;
+    
+    }
+
+/*h1 { font-family: "IM Fell English SC";
+    font-size: 24px; font-style: normal; 
+    font-variant: normal; font-weight: 700; 
+    line-height: 26.4px; }*/
+
+/* Navbar */
+
+
+
+/* formulaire */
+
+.identite {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(135, 6, 240);
+    height: 50px;
+    width: 500px;
+    margin-left: 800px;
+    margin-right: 300px;
+    padding: -20px;
+}
+
+.coordonnee {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(240, 6, 6);
+    height: 50px;
+    width: 500px;
+    margin-left: 750px;
+    margin-right: 300px;
+    padding: 80px;
+}
+
+.adresse {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(240, 6, 6);
+    height: 50px;
+    width: 900px;
+    margin-left: 800px;
+    margin-right: 300px;
+    padding: 80px;
+}
+
+.sinscrire {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(240, 6, 6);
+    
+}
+
+.connect{
+
+    text-align: right;
+    
+
+}
+
+/*.conteneur {
+
+    /*border: 1px solid black;
+    margin: 0 1em 1em;
+    overflow: hidden;
+    display:inline-block;
+    width: 220px;
+    height: 300px;
+    box-shadow: 1px 1px 12px #555;
+          
+}*/
+
+
+.background-image:hover {
+
+    transform: scale(1.1);
+   
+ 
+}
+    
+     
+    
+/*body, html {
+
+    
+    height: auto;
+
+}*/
+        
+body {
+
+       /* background-image: url('../photos/fond.png');*/
+       
+        padding:0;
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover; /* version standardisée */
+     
+} 
+
+
+
+#main {
+
+    max-width:1280vw;
+    
+    min-height:96vw;
+    
+    margin:0 auto;
+    
+    position:relative;
+    
+    }
+
+footer {
+
+    background:#ccc;
+    margin-bottom: auto;
+    
+    position: fixed;
+    
+    bottom:-3.5em;
+    
+    width:100%;
+    
+    padding-top:50px;
+    
+    height: 125px;
+
+    text-align: center;
+    
+    }
+    
+   
+
+
+
+
+
+/*body {
+	background: rgb(247, 241, 241);
+	
+}
+h1
+{   
+    text-align: center;
+    color: ForestGreen;
+    font-size: 5.3em;  
+}
+
+.main{
+    float: left;
+    list-style: none;
+    padding: 15px;
+} 
+/* les items li se mettent par défaut en block ,
+ on pourra les mettre en ligne soit par la propriété display:inline-block
+ soit par flottement à gauche float:left; */
+/*.main li{
+    float: left;
+    margin:0 0 0 30px;
+    width: 100px;
+    border: 1px solid black;
+    background: #6de988;
+}
+/* afin de changer la largeur des liens(width=100% de son conteneur li)
+ on doit changer leur affichage de la valeur inline vers inline-block */
+/*.main li>a{
+    font:1em helvetica arial sans-serif;
+    line-height: 3em;   /* pour augmenter la hauteur du lien (la zone cliquable) on peux utiliser en alternatif un padding   
+    display: inline-block; 
+    width: 100%; 
+    text-align: center;
+    text-decoration: none;  /* enlever la décoration par défaut des liens 
+    font-weight: bold;
+}
+/*  change la couleur du texte et le background 
+d'un lien au survol de la souris 
+.main a:hover{
+    color:rgb(241, 10, 10);	
+    background: #f5d7b1;
+    
+}
+*/
